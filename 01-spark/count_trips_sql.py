@@ -46,6 +46,8 @@ data.createOrReplaceTempView("mobility_data")
 # |           HV0003|              B02764|2020-03-01 00:43:27|2020-03-01 00:47:27|         150|         150|      1|
 
 spark.sql("select pickup_date, count(*) from (SELECT split(pickup_datetime,' ')[0] as pickup_date FROM mobility_data) group by pickup_date").show()
+
+
 # SELECT split(pickup_datetime,' ')[0] as pickup_date FROM mobility_data
 # +--------------------------------+                                              
 # |split(pickup_datetime,  , -1)[0]|
