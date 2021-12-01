@@ -1,9 +1,6 @@
-# pip install apache-airflow-providers-apache-spark
-
 from datetime import datetime
 
 from airflow import DAG
-from airflow.providers.apache.spark.operators.spark_sql import SparkSqlOperator
 from airflow.providers.apache.spark.operators.spark_submit import SparkSubmitOperator
 
 default_args = {

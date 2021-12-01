@@ -31,7 +31,7 @@ WHERE
     AND TO_DATE(tpep_pickup_datetime) < '2021-08-01'
 """
 data_df = spark.sql(query)
-data_df.createOrReplaceTempView("data")
+
 train_df, test_df = data_df.randomSplit([0.8, 0.2], seed=1)
 data_dir = "/Users/keon/fastcampus/data-engineering/02-airflow/data/"
 train_df.write.format("parquet").mode('overwrite').save(f"{data_dir}/train/")

@@ -16,7 +16,6 @@ spark = SparkSession.builder.appName("taxi-fare-prediciton")\
 data_dir = "/Users/keon/fastcampus/data-engineering/02-airflow/data/"
 
 train_df = spark.read.parquet(f"{data_dir}/train/")
-test_df = spark.read.parquet(f"{data_dir}/test/")
 
 toy_df = train_df.sample(False, 0.1, seed=1)
 
