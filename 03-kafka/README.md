@@ -3,7 +3,7 @@
 ## 설치 방법
 
 1. Kafka 다운로드 페이지로 들어간다 (https://kafka.apache.org/downloads)
-2. 다운로드 받은 파일을 
+2. 다운로드 받은 파일을 압축을 풀고 원하는 디렉토리로 옮긴다 
 
 ## CLI examples
 
