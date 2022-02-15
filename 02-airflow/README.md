@@ -1,6 +1,6 @@
 # Airflow
 
-## OpenAPI 오류시 대처법
+## Opensea API 오류시 대처법
 
 오픈씨는 Cloudflare라는 서비스를 앞단에 두고 사용하는데 때문에 외부 콜을 랜덤하게 차단시킬 수 있습니다. ([관련 깃헙 쓰레드](https://github.com/ProjectOpenSea/opensea-js/issues/71))
 
