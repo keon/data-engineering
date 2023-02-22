@@ -9,6 +9,7 @@ sc = SparkContext(conf=conf)
 
 # 우리가 가져올 데이터가 있는 파일
 directory = "C:\projects\DataEngineering\data-engineering\01-spark\data"
+# filename = "fhvhv_tripdata_2020-03.csv"
 filename = "fhvhv_tripdata_2020-03.parquet"
 
 # 데이터 파싱
@@ -23,4 +24,5 @@ result = dates.countByValue()
 
 # 아래는 Spark코드가 아닌 일반적인 파이썬 코드
 # CSV로 결과값 저장 
+# pd.Series(result, name="trips").to_csv("trips_date.csv")
 pd.Series(result, name="trips").to_csv("trips_date1.csv")
