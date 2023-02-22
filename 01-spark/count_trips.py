@@ -2,6 +2,9 @@
 from pyspark import SparkConf, SparkContext
 import pyarrow.parquet as parquet
 import pandas as pd
+import findspark
+
+findspark.init()
 
 # Spark 설정
 conf = SparkConf().setMaster("local[*]").setAppName("uber-date-trips")
